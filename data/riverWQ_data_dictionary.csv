@@ -1,0 +1,39 @@
+feature,description
+site_id,Unique identifier for each river monitoring site
+region,New Zealand regional council the site belongs to
+catchment,Name of the river catchment the monitoring site drains
+latitude,Latitude of the monitoring site in decimal degrees
+longitude,Longitude of the monitoring site in decimal degrees
+wfs_land_cover,"Dominant land cover class of the catchment from the Watershed Framework Survey. Categories: Rural, Forest, Urban"
+wfs_altitude,"Altitude class of the catchment from the Watershed Framework Survey. Categories: lowland, upland"
+rec_land_cover_type,"Catchment land cover type from the River Environment Classification. Categories: Pasture, Native vegetation, Exotic forest, Urban"
+mean_annual_rainfall_mm,Mean annual rainfall at the site location in millimetres averaged over the period 1970 to 2000. Higher values indicate wetter catchments
+pct_cropland,Percentage of the upstream catchment used for cropland
+pct_forest,Percentage of the upstream catchment covered by all forest types combined including both native and exotic forest
+pct_grassland_other_herbaceous_vegetation,Percentage of the upstream catchment covered by grassland and other herbaceous vegetation
+pct_scrub_shrubland,Percentage of the upstream catchment covered by scrub and shrubland
+pct_urban_bare_lightly-vegetated_surfaces,"Percentage of the upstream catchment covered by urban areas, bare surfaces, or lightly vegetated land"
+pct_cropping_horticulture,Percentage of the upstream catchment used for cropping and horticulture
+pct_exotic_forest,Percentage of the upstream catchment covered by exotic or plantation forest such as pine
+pct_exotic_grassland,"Percentage of the upstream catchment covered by exotic grassland, which is the primary indicator of pastoral farming land use. Higher values indicate more intensive agricultural land use"
+pct_exotic_scrub_shrubland,Percentage of the upstream catchment covered by exotic scrub and shrubland
+pct_indigenous_forest,Percentage of the upstream catchment covered by indigenous or native forest. Higher values generally indicate less disturbed catchments with lower contamination pressure
+pct_indigenous_scrub_shrubland,Percentage of the upstream catchment covered by indigenous scrub and shrubland
+pct_tussock_grassland,"Percentage of the upstream catchment covered by tussock grassland, typically found in upland and high country areas"
+pct_urban_area,Percentage of the upstream catchment covered by urban area. Higher values indicate greater urban land use pressure
+pct_other_herbaceous_vegetation,Percentage of the upstream catchment covered by other herbaceous vegetation types
+pct_natural_bare_lightly-vegetated_surfaces,"Percentage of the upstream catchment covered by natural bare or lightly vegetated surfaces such as riverbeds, rock, and alpine areas"
+pct_artificial_bare_surfaces,"Percentage of the upstream catchment covered by artificial bare surfaces including roads, car parks, and mines"
+ecoli_median,Median E. coli concentration at the monitoring site in MPN per 100mL. E. coli is a bacterium indicating faecal contamination. Higher values indicate greater contamination and poorer water quality. This is the primary regression target.
+drp_median,Median dissolved reactive phosphorus concentration in mg per litre. Phosphorus enters waterways primarily through agricultural runoff and is a key driver of algal growth. Higher values indicate greater phosphorus contamination
+clarity_median,Median water clarity measured as Secchi depth in metres. Higher values indicate clearer water. Lower values indicate greater sediment or algal contamination
+ammoniacal_n_median,Median ammoniacal nitrogen concentration in mg per litre. Elevated levels can be toxic to aquatic life and indicate inputs from agricultural or wastewater sources. Higher values indicate poorer water quality
+no3n_median,Median nitrate nitrogen concentration measured as NO3-N in mg per litre. Nitrate is a key nutrient derived from fertiliser and animal waste. Higher values indicate more intensive land use pressure
+ton_median,Median total oxidised nitrogen concentration in mg per litre representing the combined oxidised nitrogen forms in the water. Higher values indicate greater nitrogen contamination
+ecoli_band,"NPS-FM 2020 attribute band for E. coli assigned based on the long-term median concentration. A = below 130 MPN per 100mL (best), B = 130 to 260 MPN per 100mL, C = 260 to 540 MPN per 100mL, D = 540 to 1000 MPN per 100mL, E = above 1000 MPN per 100mL (worst). This is the primary classification target."
+drp_band,"NPS-FM 2020 attribute band for dissolved reactive phosphorus based on annual median concentration. A = below 0.006 mg per litre (best), B = 0.006 to 0.015 mg per litre, C = 0.015 to 0.054 mg per litre, D = above 0.054 mg per litre (worst)"
+nitrate_band,"NPS-FM 2020 attribute band for nitrate nitrogen based on annual median concentration. A = below 0.11 mg per litre (best), B = 0.11 to 0.58 mg per litre, C = 0.58 to 1.66 mg per litre, D = above 1.66 mg per litre (worst)"
+clarity_band,"NPS-FM 2020 attribute band for water clarity measured as Secchi depth. Bands run from A (best, clearest water) through B, C to D (worst, least clear). Thresholds vary by river sediment class as defined in NPS-FM 2020"
+ammoniacal_n_band,"NPS-FM 2020 attribute band for ammoniacal nitrogen. Bands run from A (best, lowest levels) through B to C (worst, highest levels). Thresholds are pH adjusted and vary by river conditions as defined in NPS-FM 2020"
+no3n_band,"NPS-FM 2020 attribute band for total oxidised nitrogen, used as a proxy for nitrate at sites where nitrate is not directly measured. A = below 0.11 mg per litre (best), B = 0.11 to 0.58 mg per litre, C = 0.58 to 1.66 mg per litre, D = above 1.66 mg per litre (worst)"
+ton_band,"NPS-FM 2020 attribute band for total oxidised nitrogen. A = below 0.11 mg per litre (best), B = 0.11 to 0.58 mg per litre, C = 0.58 to 1.66 mg per litre, D = above 1.66 mg per litre (worst)"
