@@ -26,6 +26,14 @@ tested prediction service, and a Gradio interface for interactive screening.
 The application is intended for exploratory prioritisation—not regulatory
 assessment or replacement of field sampling.
 
+## Live demo
+
+[**Launch AwaScreen on Hugging Face Spaces →**](https://huggingface.co/spaces/Andy10244/AwaScreen)
+
+[![AwaScreen interface showing an upland native-vegetation screening result](assets/awascreen-interface.png)](https://huggingface.co/spaces/Andy10244/AwaScreen)
+
+The Space may take a short time to wake after a period of inactivity.
+
 ## Interactive application
 
 The Gradio interface allows a user to:
@@ -189,9 +197,9 @@ explicit validation process.
 
 ## Roadmap
 
-- deploy the Gradio MVP to a persistent hosting environment;
-- add automated deployment smoke tests;
+- add automated deployment smoke tests and lightweight uptime monitoring;
 - validate local feature-attribution methods before exposing per-prediction
-  explanations; and
-- optionally add an OpenRouter-powered plain-language explanation layer while
-  keeping the trained models as the sole source of prediction values.
+  explanations;
+- evaluate performance with locally representative Canterbury data; and
+- reassess uncertainty and probability calibration as more labelled sites
+  become available.
